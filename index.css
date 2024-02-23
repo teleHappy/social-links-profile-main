@@ -1,0 +1,136 @@
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+    height: 100vh;
+    /* Optional: Set height of container for vertical centering */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--neutral-dark-grey);
+    border-radius: 1rem;
+    padding: 24px;
+}
+
+img.avatar {
+    border-radius: 50%;
+}
+
+.creds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creds > h1 {
+    font-size: 24px;
+    letter-spacing: .07rem;
+    margin-bottom: 0;
+}
+
+.primary {
+    color: var(--primary-green)
+}
+
+ creds > quote {
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul>li {
+    background-color: var(--neutral-grey);
+    width: 300px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 12px 0;
+    margin: 12px;
+}
+
+/* Layout */
+@media (min-width: 375px) {
+
+    /* Mobile styles */
+    .container {
+        height: 585px;
+        min-width: 375px;
+        margin: 0 auto;
+    }
+
+    img.avatar {
+        width: 30%;
+        height: auto
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /* Desktop styles */
+    .container {
+        min-width: 384px;
+        margin: 0 auto;
+    }
+}
+
+/* Colors */
+/* Primary */
+:root {
+    --primary-green: hsl(75, 94%, 57%);
+}
+
+/* Neutral */
+:root {
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+
+/* Typography */
+/* Body Copy */
+p {
+    font-size: 14px;
+}
+
+/* Font */
+body {
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    /* Regular */
+}
+
+strong {
+    font-weight: 600;
+    /* Semi-bold */
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    /* Bold */
+}
