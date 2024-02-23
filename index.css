@@ -58,6 +58,10 @@ ul>li {
     margin: 12px;
 }
 
+li:hover{
+    color: var(--primary-green);
+}
+
 /* Layout */
 @media (min-width: 375px) {
 
